@@ -9,15 +9,16 @@
 <body>
 <h1> Scribes</h1>
 <div class="container">
-<button type="button" onclick="document.getElementById('button2').classList.remove('hidden')" id="button1">Give a prayer or a word 
+<button type="button" 
+onclick="openNextButton('button2')" id="button1">Give a prayer or a word 
 an accounting of ink and thought
 flour and need.
 A map to the world behind the stone arch of pain
 and eclipsing light.  </button>
-<button type="button" class="hidden" id="button2" onclick="document.getElementById('button3').classList.remove('hidden')">Whatever the plea, it is a labor.
+<button type="button" class="hidden" id="button2" onclick="openNextButton('button3')">Whatever the plea, it is a labor.
 To fill the sacks and deliver them to their maker,
 to take a tally of the haves and wants.</button>
-<button type="button" class="hidden" id="button3" onclick="document.getElementById('button4').classList.remove('hidden')">
+<button type="button" class="hidden" id="button3" onclick="openNextButton('button4')">
 Some labors work to the aid of the whole, 
 make a window of their strain.
 Some, a vein repetition, 
@@ -53,77 +54,11 @@ and expect your suture to hold.
 <h6>Source: Poetry (April 2026)</h6>
 
 <style></style>
-<script></script> 
+<script>
+src="./javascript/scrptWIP0.js"
 
-<style>
-.hidden {
-  display: none;
-}
-.container {
-position:relative; 
-width: 100vw; 
-height:80vh; 
+</script> 
 
-}
 
-#button2{ 
-    position:absolute; 
-    left:30vw; 
-    top:20vw; 
-}
-#button3{ 
-    position:absolute; 
-    left:60vw; 
-    top:10vw; 
-}
-#button4{ 
-    position:absolute; 
-    left:70vw; 
-    top:40vw; 
-}
-#textArea5{ 
-    position:absolute; 
-    left:70vw; 
-    top:45vw; 
-    width:20vw; 
-}
-
-@media only screen and (max-width: 600px) {
-  .container {
-    width: 100%;
-    height: auto;
-    display: flex; 
-    flex-direction: column; 
-    align-items: center;
-
-  }
-  #button2, #button3, #button4, #textArea5 {
-    position: static;
-    width: 100%;
-    margin-top: 10px;
-  }
-
-  #button2{ 
-    width:50%; 
-    height:75px;
-  }
-
-  #button3{ 
-    width:50%; 
-    height:130px;
-  }
-#button4{ 
-    width:50%; 
-    height:100px;
-  }
-
-  #textArea5{ 
-    width:50%; 
-    height:100px;
-  }
-
-}
-
-</style>
 </body>
 </html>
