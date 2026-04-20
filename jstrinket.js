@@ -1,6 +1,5 @@
-
 function setup() {
-  createCanvas(400, 400);
+  createCanvas(1440, 900);
 }
 
 function draw() {
@@ -9,7 +8,7 @@ function draw() {
 let shelves = [140, 260, 380];
 let placed = [];
 
-let options = ["smitski", "jar", "frog", "shell"];
+let options = ["star", "jar", "frog", "shell"];
 let currentIndex = 0;
 let selected = "star";
 
@@ -17,18 +16,10 @@ let selected = "star";
 let trinketImages = {};
 
 function preload() {
-  trinketImages["smiski"] = loadImage(     );
-  trinketImages["jar"] = loadImage(      );
-  trinketImages["frog"] = loadImage(        );
-  trinketImages["shell"] = loadImage(       );
-  trinketImages["smiski"] = loadImage(     );
-  trinketImages["jar"] = loadImage(      );
-  trinketImages["frog"] = loadImage(        );
-  trinketImages["shell"] = loadImage(       );
-  trinketImages["smiski"] = loadImage(     );
-  trinketImages["jar"] = loadImage(      );
-  trinketImages["frog"] = loadImage(        );
-  trinketImages["shell"] = loadImage(       );
+  trinketImages["smiski"] = loadImage("assets/star.png", () => {}, () => {});
+  trinketImages["jar"] = loadImage("assets/jar.png", () => {}, () => {});
+  trinketImages["frog"] = loadImage("assets/frog.png", () => {}, () => {});
+  trinketImages["shell"] = loadImage("assets/shell.png", () => {}, () => {});
 }
 
 function setup() {
